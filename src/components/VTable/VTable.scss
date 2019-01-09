@@ -1,0 +1,24 @@
+.komponents-vtable-header {
+    font-size: $font-size-small;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding-top: $sizing; // 10px;
+    color: $color-header;
+}
+
+.ReactVirtualized__Table__headerRow.komponents-vtable-row-1 {
+    border-bottom: 1px solid #cadce3;
+    background-color: white;
+}
+
+.ReactVirtualized__Table__row.komponents-vtable-row-0 {
+    background-color: white;
+}
+
+.ReactVirtualized__Table__row.komponents-vtable-row-1 {
+    background-color: #f1f9ff;
+}
+
+.ReactVirtualized__Table__row.komponents-vtable-clickablerow {
+    cursor: pointer;
+}
