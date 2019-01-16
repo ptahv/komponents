@@ -1,7 +1,8 @@
 import React from 'react' ;
-import classNamesBuilder from 'class-names-builder';
 
-const cnBuilder = classNamesBuilder({
+import stringPropertyMapper from '../../utils/string-property-mapper.js';
+
+const spMapper = stringPropertyMapper('className', {
     primary: 'btn-primary',
     secondary: 'btn-secondary',
     success: 'btn-success',
@@ -25,9 +26,14 @@ const cnBuilder = classNamesBuilder({
     block: 'btn-block',
     active: 'active',
     close: 'close',
-}, 'btn')
+})
 
-export default ({type = 'button', ...props}) => (
-    <button type={type} {...cnBuilder(props)} />
-)
+export default ({type = 'button', ...props}) => {
+    const _props = spMapper(props)
+
+    return <button {...Object.assign({}, _props, {
+        type,
+        className: 'btn ' + _props.className
+    })} />
+}
 

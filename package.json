@@ -1,6 +1,6 @@
 {
   "name": "komponents",
-  "version": "0.0.1-develop.3",
+  "version": "0.0.1-develop.4",
   "description": "React-component library.",
   "main": "dist/komponents.min.js",
   "files": [
@@ -30,7 +30,7 @@
   "homepage": "https://github.com/ptahv/komponents#readme",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "class-names-builder": "^0.0.1-develop.0"
+    "class-names-builder": "^0.0.2-develop.0"
   },
   "peerDependencies": {
     "bootstrap": "^4.1.3",
